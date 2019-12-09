@@ -13,4 +13,8 @@ echo -------------------------------------------
 echo Starting webserver at http://localhost:5000
 echo Press Ctrl+C to stop
 echo -------------------------------------------
-ruby -run -e httpd . -p 5000
+npx http-server -p 5000 --cors
+
+echo If you get an error, please check that http-server is installed.
+echo You can install it with Node by entering this in the command prompt:
+echo npm install http-server -g
